@@ -1,0 +1,44 @@
+<series>
+  <serie>
+    <id>1</id>
+    <titulo>The Walking Dead</titulo>
+    <temporadas>10</temporadas>
+    <director>Robert Kirkman</director>
+    <genero>Horror</genero>
+    <imagen>./img/twd.jpg</imagen>
+    <precio>30€</precio>
+    <actores>
+      <actor>Andrew Lincoln</actor>
+      <actor>Norman Reedus</actor>
+      <actor>Steven Yeun</actor>
+    </actores>
+  </serie>
+  <serie>
+    <id>2</id>
+    <titulo>Breaking Bad</titulo>
+    <temporadas>5</temporadas>
+    <director>Vince Gilligan</director>
+    <genero>Thriller psicológico</genero>
+    <imagen>./img/bb.jpg</imagen>
+    <precio>40€</precio>
+    <actores>
+      <actor>Bryan Cranston</actor>
+      <actor>Aaron Paul</actor>
+      <actor>Steven Yeun</actor>
+    </actores>
+  </serie>
+  <serie>
+    <id>3</id>
+    <titulo>The Good Doctor</titulo>
+    <temporadas>3</temporadas>
+    <director>David Shore</director>
+    <genero>Drama</genero>
+    <imagen>./img/tgd.jpg</imagen>
+    <precio>50€</precio>
+    <actores>
+      <actor>Freddie Highmore</actor>
+      <actor>Nicholas Gonzalez</actor>
+      <actor>Antonia Thomas</actor>
+    </actores>
+  </serie>
+</series>

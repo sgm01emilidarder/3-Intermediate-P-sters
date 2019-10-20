@@ -1,0 +1,58 @@
+[{
+    "id": 1,
+    "titulo": "John Wick 3: Parabellum",
+    "duracion": "2h 10min",
+    "director": "Chad Stahelski",
+    "genero": "Acción",
+    "imagen": "./img/jw3.jpg",
+    "precio": "30€",
+    "actores": [{
+        "actor": "Keanu Reeves"
+      },
+      {
+        "actor": "Halle Berry"
+      },
+      {
+        "actor": "Laurence Fishburne"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Pulp Fiction",
+    "duracion": "2h 34min",
+    "director": "Quentin Tarantino",
+    "genero": "Thriller",
+    "imagen": "./img/pf.jpg",
+    "precio": "50€",
+    "actores": [{
+        "actor": "John Travolta"
+      },
+      {
+        "actor": "Samuel L. Jackson"
+      },
+      {
+        "actor": "Bruce Willis"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Acorralado",
+    "duracion": "1h 37min",
+    "director": "Ted Kotcheff",
+    "genero": "Acción",
+    "imagen": "./img/rambo.jpg",
+    "precio": "80€",
+    "actores": [{
+        "actor": "Sylvester Stallone"
+      },
+      {
+        "actor": "Richard Crenna"
+      },
+      {
+        "actor": "Brian Dennehy"
+      }
+    ]
+  }
+]
