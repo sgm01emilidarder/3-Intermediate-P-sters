@@ -1,58 +1,118 @@
-[{
-    "id": 1,
-    "titulo": "John Wick 3: Parabellum",
-    "duracion": "2h 10min",
-    "director": "Chad Stahelski",
-    "genero": "Acción",
-    "imagen": "./img/jw3.jpg",
-    "precio": "30€",
-    "actores": [{
-        "actor": "Keanu Reeves"
-      },
-      {
-        "actor": "Halle Berry"
-      },
-      {
-        "actor": "Laurence Fishburne"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "titulo": "Pulp Fiction",
-    "duracion": "2h 34min",
-    "director": "Quentin Tarantino",
-    "genero": "Thriller",
-    "imagen": "./img/pf.jpg",
-    "precio": "50€",
-    "actores": [{
-        "actor": "John Travolta"
-      },
-      {
-        "actor": "Samuel L. Jackson"
-      },
-      {
-        "actor": "Bruce Willis"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "titulo": "Acorralado",
-    "duracion": "1h 37min",
-    "director": "Ted Kotcheff",
-    "genero": "Acción",
-    "imagen": "./img/rambo.jpg",
-    "precio": "80€",
-    "actores": [{
-        "actor": "Sylvester Stallone"
-      },
-      {
-        "actor": "Richard Crenna"
-      },
-      {
-        "actor": "Brian Dennehy"
-      }
-    ]
-  }
-]
+{
+  "peliculas": [{
+      "id": 1,
+      "titulo": "John Wick 3: Parabellum",
+      "duracion": "2h 10min",
+      "director": "Chad Stahelski",
+      "genero": "Acción",
+      "imagen": "./img/jw3.jpg",
+      "precio": "30€",
+      "actores": [{
+          "actor": "Keanu Reeves"
+        },
+        {
+          "actor": "Halle Berry"
+        },
+        {
+          "actor": "Laurence Fishburne"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Pulp Fiction",
+      "duracion": "2h 34min",
+      "director": "Quentin Tarantino",
+      "genero": "Thriller",
+      "imagen": "./img/pf.jpg",
+      "precio": "50€",
+      "actores": [{
+          "actor": "John Travolta"
+        },
+        {
+          "actor": "Samuel L. Jackson"
+        },
+        {
+          "actor": "Bruce Willis"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Acorralado",
+      "duracion": "1h 37min",
+      "director": "Ted Kotcheff",
+      "genero": "Acción",
+      "imagen": "./img/rambo.jpg",
+      "precio": "80€",
+      "actores": [{
+          "actor": "Sylvester Stallone"
+        },
+        {
+          "actor": "Richard Crenna"
+        },
+        {
+          "actor": "Brian Dennehy"
+        }
+      ]
+    }
+  ],
+  "series": [{
+      "id": 1,
+      "titulo": "The Walking Dead",
+      "temporadas": "10",
+      "director": "Robert Kirkman",
+      "genero": "Horror",
+      "imagen": "./img/twd.jpg",
+      "precio": "30€",
+      "actores": [{
+          "actor": "Andrew Lincoln"
+        },
+        {
+          "actor": "Norman Reedus"
+        },
+        {
+          "actor": "Steven Yeun"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Breaking Bad",
+      "temporadas": "5",
+      "director": "Vince Gilligan",
+      "genero": "Thriller psicológico",
+      "imagen": "./img/bb.jpg",
+      "precio": "40€",
+      "actores": [{
+          "actor": "Bryan Cranston"
+        },
+        {
+          "actor": "Aaron Paul"
+        },
+        {
+          "actor": "Anna Gunn"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "The Good Doctor",
+      "temporadas": "3",
+      "director": "David Shore",
+      "genero": "Drama",
+      "imagen": "./img/tgd.jpg",
+      "precio": "50€",
+      "actores": [{
+          "actor": "Freddie Highmore"
+        },
+        {
+          "actor": "Nicholas Gonzalez"
+        },
+        {
+          "actor": "Antonia Thomas"
+        }
+      ]
+    }
+  ]
+}
