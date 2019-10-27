@@ -89,6 +89,10 @@ function getSeries() {
 
 function myModal(id, nombre, precio) {
   $("#ped_poster").val(nombre);
-  $("#ped_precio").val(precio);
+  $("#ped_precio").val(precio + "€");
+  $("#ped_cantidad").val(1);
   $("#pedido").modal("show");
+  $("#ped_cantidad").change(function () {
+    $("#ped_precio").val((precio * $("#ped_cantidad").val()) + "€");
+  })
 };

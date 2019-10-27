@@ -6,7 +6,7 @@
       "director": "Chad Stahelski",
       "genero": "Acción",
       "imagen": "./img/jw3.jpg",
-      "precio": "30€",
+      "precio": "30",
       "actores": [{
           "actor": "Keanu Reeves"
         },
@@ -25,7 +25,7 @@
       "director": "Quentin Tarantino",
       "genero": "Thriller",
       "imagen": "./img/pf.jpg",
-      "precio": "50€",
+      "precio": "50",
       "actores": [{
           "actor": "John Travolta"
         },
@@ -44,7 +44,7 @@
       "director": "Ted Kotcheff",
       "genero": "Acción",
       "imagen": "./img/rambo.jpg",
-      "precio": "80€",
+      "precio": "80",
       "actores": [{
           "actor": "Sylvester Stallone"
         },
@@ -64,7 +64,7 @@
       "director": "Robert Kirkman",
       "genero": "Horror",
       "imagen": "./img/twd.jpg",
-      "precio": "30€",
+      "precio": "30",
       "actores": [{
           "actor": "Andrew Lincoln"
         },
@@ -83,7 +83,7 @@
       "director": "Vince Gilligan",
       "genero": "Thriller psicológico",
       "imagen": "./img/bb.jpg",
-      "precio": "40€",
+      "precio": "40",
       "actores": [{
           "actor": "Bryan Cranston"
         },
@@ -102,7 +102,7 @@
       "director": "David Shore",
       "genero": "Drama",
       "imagen": "./img/tgd.jpg",
-      "precio": "50€",
+      "precio": "50",
       "actores": [{
           "actor": "Freddie Highmore"
         },
