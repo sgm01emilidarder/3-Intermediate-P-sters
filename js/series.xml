@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <series>
   <serie>
     <id>1</id>
@@ -6,7 +7,7 @@
     <director>Robert Kirkman</director>
     <genero>Horror</genero>
     <imagen>./img/twd.jpg</imagen>
-    <precio>30€</precio>
+    <precio>30</precio>
     <actores>
       <actor>Andrew Lincoln</actor>
       <actor>Norman Reedus</actor>
@@ -20,7 +21,7 @@
     <director>Vince Gilligan</director>
     <genero>Thriller psicológico</genero>
     <imagen>./img/bb.jpg</imagen>
-    <precio>40€</precio>
+    <precio>40</precio>
     <actores>
       <actor>Bryan Cranston</actor>
       <actor>Aaron Paul</actor>
@@ -34,7 +35,7 @@
     <director>David Shore</director>
     <genero>Drama</genero>
     <imagen>./img/tgd.jpg</imagen>
-    <precio>50€</precio>
+    <precio>50</precio>
     <actores>
       <actor>Freddie Highmore</actor>
       <actor>Nicholas Gonzalez</actor>
