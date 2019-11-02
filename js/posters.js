@@ -173,11 +173,14 @@ function myModal(id, nombre, precio) {
   })
 };
 
-let pedido = {
-  "item": []
-};
+let pedido = JSON.parse(localStorage.getItem("carrito"));
 
 function addToLocalStorage() {
+  if (pedido === null) {
+    pedido = {
+      "item": []
+    };
+  }
   pedido.item.push({
     "poster": $("#ped_poster").val(),
     "precio": $("#ped_precio").val(),
@@ -206,7 +209,7 @@ function printLocalStorage() {
     precio += precioNum;
   }
   document.getElementById("totalCompra").innerHTML = `
-    ${precio + '€'};
+    ${precio + '€'}
   `;
 }
 
