@@ -173,12 +173,9 @@ function myModal(id, nombre, precio) {
   })
 };
 
-let pedido = {  "item": [] };
-
-// $(document).ready(function(){
-//   pedido.item.push(JSON.parse(localStorage.getItem("carrito")));
-//   console.log(pedido);
-// })
+let pedido = {
+  "item": []
+};
 
 function addToLocalStorage() {
   pedido.item.push({
@@ -191,16 +188,26 @@ function addToLocalStorage() {
 
 function printLocalStorage() {
   document.getElementById("tCarrito").innerHTML = '';
+  let precio = 0;
+  let precioSinE = "";
+  let precioNum = 0;
   let objStorage = JSON.parse(localStorage.getItem("carrito"));
   for (let item of objStorage.item) {
     document.getElementById("tCarrito").innerHTML += `
-    <tr>
-      <th scope="row">${item.poster}</th>
-      <td>${item.cantidad}</td>
-      <td>${item.precio}</td>
-    </tr>
-  `;
+      <tr>
+        <th scope="row">${item.poster}</th>
+        <td>${item.cantidad}</td>
+        <td>${item.precio}</td>
+      </tr>
+    `;
+
+    precioSinE = item.precio.replace('€', '');
+    precioNum = parseInt(precioSinE, 10);
+    precio += precioNum;
   }
+  document.getElementById("totalCompra").innerHTML = `
+    ${precio + '€'};
+  `;
 }
 
 function deleteLocalStorage() {
