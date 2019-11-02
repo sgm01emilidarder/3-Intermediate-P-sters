@@ -191,6 +191,7 @@ function addToLocalStorage() {
 
 function printLocalStorage() {
   document.getElementById("tCarrito").innerHTML = '';
+  document.getElementById("totalCompra").innerHTML = '0€';
   let precio = 0;
   let precioSinE = "";
   let precioNum = 0;
