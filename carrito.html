@@ -45,35 +45,31 @@
       </form>
     </div>
   </nav>
-  <header class="row my-4 py-5 bg-info">
-    <h1 class="col-12">Tu póster personalizado</h1>
-    <p class="col-12">Elige el poster que mas te guste a un precio competitivo!</p>
-  </header>
-  <nav class="row mb-3">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="peliculas-tab" onclick="getMovies()" data-toggle="tab" href="#peliculas" role="tab" aria-controls="peliculas" aria-selected="true">Pósters de películas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="series-tab" onclick="getSeries()" data-toggle="tab" href="#series" role="tab" aria-controls="series" aria-selected="false">Pósters de series</a>
-      </li>
-    </ul>
-  </nav>
-  <section class="row tab-content" id="myTabContent">
-    <div class="col tab-pane fade show active" id="peliculas" role="tabpanel" aria-labelledby="peliculas-tab">
-      <div class="row" id="peliculas2">
-        <!-- contenido de peliculas -->
-      </div>
-    </div>
 
-    <div class="col tab-pane fade" id="series" role="tabpanel" aria-labelledby="series-tab">
-      <div class="row" id="series2">
-        <!-- contenido de series -->
-      </div>
-    </div>
+  <section>
+    <table class="table my-5">
+      <thead>
+        <tr>
+          <th scope="col">Poster</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tCarrito">
+      </tbody>
+      <tbody class="table-active">
+        <tr>
+          <th scope="row">Total Compra</th>
+          <td colspan="2"></td>
+          <td id="totalCompra"></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <button type="button" class="btn btn-primary" onclick="deleteLocalStorage()">Borrar carrito</button>
   </section>
 
-  <hr class="mt-5" />
+  <hr class="pt-5" />
   <footer class="row">
     <div class="col-3">
       <img src="./img/filmicon.png" width="100" height="100" class="d-inline-block align-bottom" alt="">
@@ -105,59 +101,6 @@
     </div>
   </footer>
 
-  <!-- Modal ------------------------------------------------------------>
-  <div class="modal fade" id="pedido" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLabel">Pedido</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label>Poster: </label>
-              <input type="text" id="ped_poster" name="cantidad" value="" readonly />
-            </div>
-            <div class="form-group">
-              <label>Cantidad: </label>
-              <input type="number" id="ped_cantidad" name="cantidad" value="1" />
-            </div>
-            <div class="form-group">
-              <label>Precio: </label>
-              <input type="text" id="ped_precio" name="precio" value="" readonly disabled />
-            </div>
-            <!--Ús de input group-->
-            <div class="form-group">
-              <label>Medida:</label>
-              <div class="btn-group" role="group" aria-label="Medida">
-                <button type="button" class="btn btn-primary">Pequeño</button>
-                <button type="button" class="btn btn-primary">Mediano</button>
-                <button type="button" class="btn btn-primary">Grande</button>
-              </div>
-            </div>
-            <!--ús de collapse  -- >
-								<p>
-									<a href="#collapsePedido" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapsePedido">Leer condiciones</a>
-								</p>
-								<div class="collapse" id="collapsePedido">
-									<div class="card card-body">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</div>
-								</div>
-								<!-- fi collapse -->
-
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" onclick="addToLocalStorage()">Añadir al carrito</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
@@ -165,7 +108,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/posters.js"></script>
   <script type="text/javascript">
-    getMovies();
+    printLocalStorage();
   </script>
 </body>
 

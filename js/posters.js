@@ -172,3 +172,38 @@ function myModal(id, nombre, precio) {
     $("#ped_precio").val((precio * $("#ped_cantidad").val()) + "€");
   })
 };
+
+let pedido = {  "item": [] };
+
+// $(document).ready(function(){
+//   pedido.item.push(JSON.parse(localStorage.getItem("carrito")));
+//   console.log(pedido);
+// })
+
+function addToLocalStorage() {
+  pedido.item.push({
+    "poster": $("#ped_poster").val(),
+    "precio": $("#ped_precio").val(),
+    "cantidad": $("#ped_cantidad").val()
+  })
+  localStorage.setItem("carrito", JSON.stringify(pedido));
+}
+
+function printLocalStorage() {
+  document.getElementById("tCarrito").innerHTML = '';
+  let objStorage = JSON.parse(localStorage.getItem("carrito"));
+  for (let item of objStorage.item) {
+    document.getElementById("tCarrito").innerHTML += `
+    <tr>
+      <th scope="row">${item.poster}</th>
+      <td>${item.cantidad}</td>
+      <td>${item.precio}</td>
+    </tr>
+  `;
+  }
+}
+
+function deleteLocalStorage() {
+  localStorage.removeItem("carrito");
+  printLocalStorage();
+}
