@@ -171,6 +171,7 @@ function myModal(id, nombre, precio) {
   $("#ped_cantidad").change(function() {
     $("#ped_precio").val((precio * $("#ped_cantidad").val()) + "€");
   })
+
 };
 
 let pedido = JSON.parse(localStorage.getItem("carrito"));
@@ -187,6 +188,7 @@ function addToLocalStorage() {
     "cantidad": $("#ped_cantidad").val()
   })
   localStorage.setItem("carrito", JSON.stringify(pedido));
+  $('#pedido').click().hide();
 }
 
 function printLocalStorage() {
